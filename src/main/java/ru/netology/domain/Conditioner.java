@@ -5,7 +5,7 @@ public class Conditioner {
     private int maxTemperature;
     private int minTemperature;
     private int currentTemperature;
-        private boolean on;
+    private boolean on;
 
 
     public String getName() {
@@ -40,7 +40,7 @@ public class Conditioner {
         this.currentTemperature = currentTemperature;
     }
 
-    public void increaseCurrentTemperature(){
+    public void increaseCurrentTemperature() {
         int currentTemperature = this.currentTemperature;
         if (currentTemperature >= maxTemperature) {
             return;
@@ -48,7 +48,7 @@ public class Conditioner {
         this.currentTemperature = currentTemperature + 1;
     }
 
-    public void decreaseCurrentTemperature(){
+    public void decreaseCurrentTemperature() {
         int currentTemperature = this.currentTemperature;
         if (currentTemperature <= minTemperature) {
             return;
