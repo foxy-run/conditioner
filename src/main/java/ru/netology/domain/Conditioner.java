@@ -56,7 +56,7 @@ public class Conditioner {
         this.currentTemperature = currentTemperature - 1;
     }
 
-    public boolean isOn() {
+    public boolean getOn() {
         return on;
     }
 
