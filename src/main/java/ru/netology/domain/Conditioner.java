@@ -37,25 +37,15 @@ public class Conditioner {
     }
 
     public void setCurrentTemperature(int currentTemperature) {
-        this.currentTemperature = currentTemperature;
-    }
-
-    public void setTemperatureMin() {
-        int currentTemperature = this.currentTemperature;
         if (currentTemperature < minTemperature) {
             return;
         }
-        this.currentTemperature = currentTemperature;
-    }
-
-    public void setTemperatureMax() {
-        int currentTemperature = this.currentTemperature;
         if (currentTemperature > maxTemperature) {
             return;
         }
         this.currentTemperature = currentTemperature;
-    }
 
+    }
     public void increaseCurrentTemperature() {
         int currentTemperature = this.currentTemperature;
         if (currentTemperature >= maxTemperature) {
